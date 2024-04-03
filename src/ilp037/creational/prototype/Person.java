@@ -1,5 +1,7 @@
 package ilp037.creational.prototype;
 
+
+
 public class Person extends Prototype<Person> implements Cloneable{
 
     String name;
@@ -13,5 +15,11 @@ public class Person extends Prototype<Person> implements Cloneable{
             throw new RuntimeException(e);
         }
         System.out.println("Long Time");
+    }
+    public  String toString(){
+        return String.format(
+                "Person = (name: %s, document: %d)"
+                ,name,document
+        );
     }
 }
