@@ -7,6 +7,6 @@ public class Circle extends Shape {
 
     @Override
     public String draw() {
-        return "Draws a circle with" + color.fill();
+        return "Draws a circle with " + color.fill();
     }
 }
